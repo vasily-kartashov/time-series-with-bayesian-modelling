@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "time-series-with-bayesian-modelling"
+version = "0.1.0"
+description = ""
+authors = ["Vasily Kartashov <info@kartashov.com>"]
+readme = "README.md"
+packages = [{include = "time_series_with_bayesian_modelling"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2"
+jupyter = "^1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
