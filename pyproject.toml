@@ -3,17 +3,17 @@ name = "time-series-with-bayesian-modelling"
 version = "0.1.0"
 description = ""
 authors = ["Vasily Kartashov <info@kartashov.com>"]
-readme = "README.md"
-packages = [{include = "time_series_with_bayesian_modelling"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 pandas = "^2"
 jupyter = "^1"
 matplotlib = "^3.7.1"
 statsmodels = "^0.13.5"
 scikit-learn = "^1.2.2"
 pmdarima = "^2.0.3"
+prophet = "^1"
+pystan = "2.19.1.1"
 
 [build-system]
 requires = ["poetry-core"]
