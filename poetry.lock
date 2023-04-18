@@ -1976,17 +1976,29 @@ wcwidth = "*"
 
 [[package]]
 name = "prophet"
-version = "1.1.2"
+version = "1.1.1"
 description = "Automatic Forecasting Procedure"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "prophet-1.1.2-py3-none-macosx_10_9_x86_64.whl", hash = "sha256:b978a62fba90a70b68751288ea29325c51df05bbff62fe9697e45a97430f6dd4"},
-    {file = "prophet-1.1.2-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:21cf2d83d25cbc77f833014d7197744ccb43532cb9a04b9fdd2bc48b79b46a05"},
-    {file = "prophet-1.1.2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:4beab6a742f77edaa597bbaee0db19a48c3fd98f012797c1cc5065d3f6f4384d"},
-    {file = "prophet-1.1.2-py3-none-win_amd64.whl", hash = "sha256:5ab1e5833e01d1bae9e1b379432dc8abb5b4c7f0360162ab5e250b90611c278c"},
-    {file = "prophet-1.1.2.tar.gz", hash = "sha256:3cfb7665962e983b05367f65f37692d9c8569a86335f3f163925ec89a128bfab"},
+    {file = "prophet-1.1.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:53ae842456cfae42d632ead7231bee9ae8c83e7c78054845a97c9c417fd455ab"},
+    {file = "prophet-1.1.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9d960666863b4744fcfb622d7cee8c8ccd6feb34b043b9b23b790a575198611b"},
+    {file = "prophet-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:67798db4a2ab777cc1ed870e36259ab86c64139b77f32849c0cb433b666b2ca2"},
+    {file = "prophet-1.1.1-cp310-cp310-win_amd64.whl", hash = "sha256:bb8d24d055ae59c91812aa4d42ecd3c7b98fe2544b66d4d4d84e70079dcdc8c8"},
+    {file = "prophet-1.1.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:c368f78cf33991a1131e0cee9b1f5cdd5db6e8ccaa6f2ec9db842664caa39ec9"},
+    {file = "prophet-1.1.1-cp37-cp37m-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:36072d0d6c2f22c486effd1454a04a2d157fd3801286339fb10d5c23e7992d6b"},
+    {file = "prophet-1.1.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:fdee9918b0ba603b7c91f9be8fbd7635d1dc9a92aed76743db46cd3738345395"},
+    {file = "prophet-1.1.1-cp37-cp37m-win_amd64.whl", hash = "sha256:51a4742abd6678e980cc7f3082bdfb0f1cacf7a5a1182251a26db4c1a374440d"},
+    {file = "prophet-1.1.1-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:79db0587c0514680487f7c94cf2a7b392f0730916d25abd9a547f1b530fc0ebf"},
+    {file = "prophet-1.1.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:0003a79009d956c67f171bb5fa6ee88a84502d8fb8d57af5cac509a41a36035e"},
+    {file = "prophet-1.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d44a5eff71d9f177112fdbc56a39ee335783d759cd0afec088e8395505b09f84"},
+    {file = "prophet-1.1.1-cp38-cp38-win_amd64.whl", hash = "sha256:4ea6901d8ffaab1db03877e5696d2ba2a0c531188c29973ef38fa26cdffc376d"},
+    {file = "prophet-1.1.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:b513a73b80d20df181a5e2325870ce0655bb32d6e1b9c73380a085e04c2ff296"},
+    {file = "prophet-1.1.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:83789102a9cb356dcc375e6aa0877bcbebd0c8c70f78ab0bd48aa3eda2c2f69a"},
+    {file = "prophet-1.1.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:2590eaf638b11747c98c2573679abe7012b0aa12c2fc5bc65f3906a702429f16"},
+    {file = "prophet-1.1.1-cp39-cp39-win_amd64.whl", hash = "sha256:7ec0f509bb4510d97a430c411b050f08deb23dd8a3b02ec4f596505a5ee5b3f8"},
+    {file = "prophet-1.1.1.tar.gz", hash = "sha256:fbef61a868c6289e12bcee38fa4b68977ba1270466084605135dbcc3d3c5ab7a"},
 ]
 
 [package.dependencies]
@@ -1998,11 +2010,10 @@ matplotlib = ">=2.0.0"
 numpy = ">=1.15.4"
 pandas = ">=1.0.4"
 python-dateutil = ">=2.8.0"
+setuptools = ">=42"
+setuptools-git = ">=1.2"
 tqdm = ">=4.36.1"
-
-[package.extras]
-dev = ["jupyterlab", "nbconvert", "plotly", "pytest", "setuptools (>=64)", "wheel"]
-parallel = ["dask[dataframe]", "distributed"]
+wheel = ">=0.37.0"
 
 [[package]]
 name = "psutil"
@@ -2622,6 +2633,18 @@ testing = ["build[virtualenv]", "filelock (>=3.4.0)", "flake8 (<5)", "flake8-202
 testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (>=2.2)", "jaraco.path (>=3.2.0)", "pytest", "pytest-enabler", "pytest-xdist", "tomli", "virtualenv (>=13.0.0)", "wheel"]
 
 [[package]]
+name = "setuptools-git"
+version = "1.2"
+description = "Setuptools revision control system plugin for Git"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "setuptools-git-1.2.tar.gz", hash = "sha256:ff64136da01aabba76ae88b050e7197918d8b2139ccbf6144e14d472b9c40445"},
+    {file = "setuptools_git-1.2-py2.py3-none-any.whl", hash = "sha256:e7764dccce7d97b4b5a330d7b966aac6f9ac026385743fd6cedad553f2494cfa"},
+]
+
+[[package]]
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
@@ -2784,23 +2807,23 @@ test = ["flake8", "isort", "pytest"]
 
 [[package]]
 name = "tornado"
-version = "6.2"
+version = "6.3"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
 category = "main"
 optional = false
-python-versions = ">= 3.7"
+python-versions = ">= 3.8"
 files = [
-    {file = "tornado-6.2-cp37-abi3-macosx_10_9_universal2.whl", hash = "sha256:20f638fd8cc85f3cbae3c732326e96addff0a15e22d80f049e00121651e82e72"},
-    {file = "tornado-6.2-cp37-abi3-macosx_10_9_x86_64.whl", hash = "sha256:87dcafae3e884462f90c90ecc200defe5e580a7fbbb4365eda7c7c1eb809ebc9"},
-    {file = "tornado-6.2-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:ba09ef14ca9893954244fd872798b4ccb2367c165946ce2dd7376aebdde8e3ac"},
-    {file = "tornado-6.2-cp37-abi3-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:b8150f721c101abdef99073bf66d3903e292d851bee51910839831caba341a75"},
-    {file = "tornado-6.2-cp37-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d3a2f5999215a3a06a4fc218026cd84c61b8b2b40ac5296a6db1f1451ef04c1e"},
-    {file = "tornado-6.2-cp37-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:5f8c52d219d4995388119af7ccaa0bcec289535747620116a58d830e7c25d8a8"},
-    {file = "tornado-6.2-cp37-abi3-musllinux_1_1_i686.whl", hash = "sha256:6fdfabffd8dfcb6cf887428849d30cf19a3ea34c2c248461e1f7d718ad30b66b"},
-    {file = "tornado-6.2-cp37-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:1d54d13ab8414ed44de07efecb97d4ef7c39f7438cf5e976ccd356bebb1b5fca"},
-    {file = "tornado-6.2-cp37-abi3-win32.whl", hash = "sha256:5c87076709343557ef8032934ce5f637dbb552efa7b21d08e89ae7619ed0eb23"},
-    {file = "tornado-6.2-cp37-abi3-win_amd64.whl", hash = "sha256:e5f923aa6a47e133d1cf87d60700889d7eae68988704e20c75fb2d65677a8e4b"},
-    {file = "tornado-6.2.tar.gz", hash = "sha256:9b630419bde84ec666bfd7ea0a4cb2a8a651c2d5cccdbdd1972a0c859dfc3c13"},
+    {file = "tornado-6.3-cp38-abi3-macosx_10_9_universal2.whl", hash = "sha256:6cfff1e9c15c79e106b8352269d201f8fc0815914a6260f3893ca18b724ea94b"},
+    {file = "tornado-6.3-cp38-abi3-macosx_10_9_x86_64.whl", hash = "sha256:6164571f5b9f73143d1334df4584cb9ac86d20c461e17b6c189a19ead8bb93c1"},
+    {file = "tornado-6.3-cp38-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:4546003dc8b5733489139d3bff5fa6a0211be505faf819bd9970e7c2b32e8122"},
+    {file = "tornado-6.3-cp38-abi3-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:c659ab04d5aa477dbe44152c67d93f3ad3243b992d94f795ca1d5c73c37337ce"},
+    {file = "tornado-6.3-cp38-abi3-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:912df5712024564e362ecce43c8d5862e14c78c8dd3846c9d889d44fbd7f4951"},
+    {file = "tornado-6.3-cp38-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:c37b6a384d54ce6a31168d40ab21ad2591ddaf34973075cc0cad154402ecd9e8"},
+    {file = "tornado-6.3-cp38-abi3-musllinux_1_1_i686.whl", hash = "sha256:c9114a61a4588c09065b9996ae05462350d17160b92b9bf9a1e93689cc0424dc"},
+    {file = "tornado-6.3-cp38-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:4d349846931557b7ec92f224b5d598b160e2ba26ae1812480b42e9622c884bf7"},
+    {file = "tornado-6.3-cp38-abi3-win32.whl", hash = "sha256:d7b737e18f701de3e4a3b0824260b4d740e4d60607b8089bb80e80ffd464780e"},
+    {file = "tornado-6.3-cp38-abi3-win_amd64.whl", hash = "sha256:720f53e6367b38190ae7fa398c25c086c69d88b3c6535bd6021a126b727fb5cd"},
+    {file = "tornado-6.3.tar.gz", hash = "sha256:d68f3192936ff2c4add04dc21a436a43b4408d466746b78bb2b9d0a53a18683f"},
 ]
 
 [[package]]
@@ -2954,6 +2977,21 @@ optional = ["python-socks", "wsaccel"]
 test = ["websockets"]
 
 [[package]]
+name = "wheel"
+version = "0.40.0"
+description = "A built-package format for Python"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "wheel-0.40.0-py3-none-any.whl", hash = "sha256:d236b20e7cb522daf2390fa84c55eea81c5c30190f90f29ae2ca1ad8355bf247"},
+    {file = "wheel-0.40.0.tar.gz", hash = "sha256:cd1196f3faee2b31968d626e1731c94f99cbdb67cf5a46e4f5656cbee7738873"},
+]
+
+[package.extras]
+test = ["pytest (>=6.0.0)"]
+
+[[package]]
 name = "widgetsnbextension"
 version = "4.0.7"
 description = "Jupyter interactive widgets for Jupyter Notebook"
@@ -2984,4 +3022,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "eed78b81ce43b354d31d3cc4f2bb1707ef51e29f1e25c0426b6b506210995a4f"
+content-hash = "f7bd901b61ac062b334f4d73dba1b1b3cf652da32be1b6aa98062152443ed7b4"
