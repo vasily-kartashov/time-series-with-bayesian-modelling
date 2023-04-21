@@ -23,6 +23,7 @@ dependencies:
     - pmdarima
     - prophet
     - plotly
+    - seaborn
 
 post-update: |
   CONDA_ENVS=$(conda info --envs | grep \* | awk '{print $NF}')
