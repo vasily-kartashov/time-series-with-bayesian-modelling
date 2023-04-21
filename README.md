@@ -1,5 +1,27 @@
 On M1 mac, this is required to run Prophet: 
 
-    cd $(poetry env info --path)/lib/python3.9/site-packages/prophet/stan_model
+    
+    CONDA_ENVS=$(conda info --envs | grep \* | awk '{print $NF}')
+    ENV_NAME=time-series-with-bayesian-modelling
+    cd "$CONDA_ENVS/envs/$ENV_NAME/lib/python3.10/site-packages/prophet/stan_model"
     install_name_tool -add_rpath @executable_path/cmdstan-2.26.1/stan/lib/stan_math/lib/tbb prophet_model.bin
 
+Purge
+
+    conda deactivate && conda remove -n time-series-with-bayesian-modelling --all
+
+Initial setup with conda:
+
+    conda env create --file environment.yml && conda activate time-series-with-bayesian-modelling
+
+Upgrading dependencies:
+
+    conda env update --file environment.yml --prune
+
+Installing conda-tree:
+
+    conda install -c conda-forge conda-tree
+
+Checking dependencies:
+
+    conda-tree depends -t numpy
