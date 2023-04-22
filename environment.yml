@@ -16,6 +16,8 @@ dependencies:
   - scikit-learn
   - statsmodels
   - pystan
+  - pymc
+  - arviz
   - pip:
     - tensorflow-macos
     - tensorflow-metal
@@ -24,9 +26,3 @@ dependencies:
     - prophet
     - plotly
     - seaborn
-
-post-update: |
-  CONDA_ENVS=$(conda info --envs | grep \* | awk '{print $NF}')
-  ENV_NAME=time-series-with-bayesian-modelling
-  cd "$CONDA_ENVS/envs/$ENV_NAME/lib/python3.10/site-packages"
-  install_name_tool -add_rpath @executable_path/cmdstan-2.26.1/stan/lib/stan_math/lib/tbb prophet_model.bin
