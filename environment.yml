@@ -7,18 +7,15 @@ channels:
 dependencies:
   - python=3.10
   - pip>=19
-  - pandas
-  - numpy=1.21.*
+  - numpy
   - tensorflow
   - apple::tensorflow-deps
-  - jupyter
-  - matplotlib
-  - scikit-learn
-  - statsmodels
-  - pystan
-  - pymc
-  - arviz
+  - theano
   - python-graphviz
+  - aesara
+  - notebook
+  - ipykernel
+  - nb_conda_kernels
   - pip:
     - tensorflow-macos
     - tensorflow-metal
@@ -27,3 +24,10 @@ dependencies:
     - prophet
     - plotly
     - seaborn
+    - pymc
+    - arviz
+    - scikit-learn
+    - matplotlib
+    - statsmodels
+    - pandas
+    - pytest
